@@ -24,24 +24,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body class="bg-brown-500">
 
+    {{-- Start Header --}}
     @include('partials.header')
+    {{-- End Header --}}
 
-    <div class="container-fluid px-4 border-bottom mb-4 bg-light">
+    {{-- Start Title --}}
+    <div class="container-fluid px-4 py-3 border-bottom mb-4 bg-light">
         @yield('title')
     </div>
+    {{-- End Title --}}
 
+    {{-- Start Content --}}
     <div class="container-fluid">
-        @yield('content')
+        <div class="row mt-4">
+            <div class="col-lg-8 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        @yield('content')
+                    </div>
+                </div>
+            </div>
+
+            {{-- Start Widget --}}
+            <div class="col-lg-4">
+                @include('partials.widgetSchedule')
+                @include('partials.widgetVideo')
+            </div>
+            {{-- End Widget --}}
+
+        </div>
     </div>
+    {{-- End Content --}}
 
+    {{-- Start Footer --}}
     @include('partials.footer')
+    {{-- End Footer --}}
 
-
-    {{-- js --}}
+    {{-- List js --}}
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

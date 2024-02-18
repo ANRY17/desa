@@ -2,15 +2,13 @@
 
 @section('title')
     {{-- Start Title Marque --}}
-    <div class="container-fluid px-4 border-bottom mb-4 bg-light">
-        <div class="row align-items-center">
-            <div class="heading-berita col-md-auto bg-primary d-none d-md-flex align-items-center py-2">
-                <h5 class="m-0 fw-bold">Berita</h5>
-            </div>
-            <div class="col col d-flex align-items-center px-0 py-2">
-                <marquee>Selamat datang di website kami
-                    teknologi.visitklaten.com - Sharing Teknologi - Berbagi Ilmu Tentang Teknologi</marquee>
-            </div>
+    <div class="row align-items-center">
+        <div class="heading-berita col-md-auto bg-primary d-none d-md-flex align-items-center py-2">
+            <h5 class="m-0 fw-bold">Berita</h5>
+        </div>
+        <div class="col col d-flex align-items-center px-0 py-2">
+            <marquee>Selamat datang di website kami
+                teknologi.visitklaten.com - Sharing Teknologi - Berbagi Ilmu Tentang Teknologi</marquee>
         </div>
     </div>
     {{-- End Title Marque --}}
