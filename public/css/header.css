@@ -4,10 +4,6 @@
 }
 
 /* Define the blue 900 background color */
-.bg-blue-900 {
-    background-color: #07244f;
-}
-
 .overlapping-image {
     position: relative;
     height: 450px;

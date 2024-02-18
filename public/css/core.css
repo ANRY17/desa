@@ -3,3 +3,19 @@
 body {
     font-family: "Noto Sans KR", sans-serif;
 }
+
+.bg-blue-900 {
+    background-color: #07244f;
+}
+
+.bg-black-900 {
+    background-color: #1f2024 !important;
+}
+
+.clr-white-900 {
+    color: white !important;
+}
+
+.bg-blue-500 {
+    background-color: #1151d3;
+}
