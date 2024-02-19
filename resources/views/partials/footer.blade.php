@@ -1,5 +1,5 @@
 {{-- Start Footer --}}
-<footer class="py-4 bg-blue-900 mt-4">
+<footer class="py-4 bg-blue-900">
     <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; PKL KELOMPOK 2</p>
     </div>

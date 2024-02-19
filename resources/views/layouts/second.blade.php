@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/marque.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/preview.css">
 
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -34,7 +35,7 @@
     {{-- End Header --}}
 
     {{-- Start Title --}}
-    <div class="container-fluid px-4 py-3 border-bottom mb-4 bg-light">
+    <div class="container-fluid">
         @yield('title')
     </div>
     {{-- End Title --}}
@@ -48,6 +49,7 @@
                         @yield('content')
                     </div>
                 </div>
+                @yield('comment')
             </div>
 
             {{-- Start Widget --}}

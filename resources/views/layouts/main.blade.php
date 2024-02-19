@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/marque.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/preview.css">
 
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"

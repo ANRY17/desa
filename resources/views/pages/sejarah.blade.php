@@ -2,7 +2,9 @@
 
 @section('title')
     {{-- Start Title Heading --}}
-    <h2 class="fw-bold">SEJARAH</h2>
+    <div class="px-4 py-3 border-bottom mb-4 bg-light">
+        <h2 class="fw-bold">SEJARAH</h2>
+    </div>
     {{-- End Title Heading --}}
 @endsection
 
