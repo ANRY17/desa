@@ -26,7 +26,8 @@
     {{-- Start Navbar --}}
     <nav class="navbar navbar-expand-lg navbar-dark bg-blue-900 py-0">
         <div class="container-fluid">
-            <a class="navbar-brand bg-change px-3 py-3 me-auto" href="/"><i class="fa-solid fa-house"></i></a>
+            <a class="navbar-brand bg-change px-3 py-3 me-auto {{ $title === 'home' ? 'active' : '' }}"
+                href="/"><i class="fa-solid fa-house"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,13 +38,19 @@
                         <a class="nav-link  dropdown-toggle bg-change" href="#" data-bs-toggle="dropdown">
                             PROFIL</a>
                         <ul class="dropdown-menu bg-black-900 fs">
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="/sejarah"> SEJARAH</a></li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> VISI & MISI </a></li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> STRUKTUR ORGANISASI
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'sejarah' ? 'header-active' : '' }}"
+                                    href="/sejarah"> SEJARAH</a></li>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'visiMisi' ? 'header-active' : '' }}"
+                                    href="/visi-misi"> VISI & MISI </a>
+                            </li>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'struktur' ? 'header-active' : '' }}"
+                                    href="/struktur"> STRUKTUR ORGANISASI
                                 </a>
                             </li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> DEMOGRAFI </a></li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> PETA </a></li>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'demografi' ? 'header-active' : '' }}"
+                                    href="/demografi"> DEMOGRAFI </a></li>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'peta' ? 'header-active' : '' }}"
+                                    href="/peta"> PETA </a></li>
                         </ul>
                     </li>
 
@@ -51,28 +58,42 @@
                         <a class="nav-link  dropdown-toggle bg-change" href="#" data-bs-toggle="dropdown">
                             LAYANAN</a>
                         <ul class="dropdown-menu bg-black-900">
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> SURAT KETERANGAN
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'surat-keterangan-umum' ? 'header-active' : '' }}"
+                                    href="/surat-keterangan-umum"> SURAT KETERANGAN
                                     UMUM</a>
                             </li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> SURAT KELAHIRAN </a>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'surat-kelahiran' ? 'header-active' : '' }}"
+                                    href="/surat-kelahiran"> SURAT KELAHIRAN </a>
                             </li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> SURAT NIKAH </a></li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> SURAT IJIN LUAR NEGRI
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'surat-nikah' ? 'header-active' : '' }}"
+                                    href="/surat-nikah"> SURAT NIKAH </a></li>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'surat-ijin-luar-negri' ? 'header-active' : '' }}"
+                                    href="/surat-ijin-luar-negri"> SURAT IJIN LUAR NEGRI
                                 </a>
                             </li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> SURAT PINDAH TEMPAT
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'surat-pindah-tempat' ? 'header-active' : '' }}"
+                                    href="/surat-pindah-tempat"> SURAT PINDAH TEMPAT
                                 </a>
                             </li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> SURAT KEMATIAN </a>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'surat-kematian' ? 'header-active' : '' }}"
+                                    href="/surat-kematian"> SURAT KEMATIAN </a>
                             </li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> BORO NIKAH </a></li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> IJIN USAHA </a></li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> SKCK </a></li>
-                            <li><a class="dropdown-item clr-white-900 bg-change" href="#"> BRI </a></li>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'boro-nikah' ? 'header-active' : '' }}"
+                                    href="/boro-nikah"> BORO NIKAH </a></li>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'ijin-usaha' ? 'header-active' : '' }}"
+                                    href="/ijin-usaha"> IJIN USAHA </a></li>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'skck' ? 'header-active' : '' }}"
+                                    href="/skck"> SKCK </a></li>
+                            <li><a class="dropdown-item clr-white-900 bg-change {{ $title === 'bri' ? 'header-active' : '' }}"
+                                    href="/bri"> BRI </a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link bg-change" href="#"> POTENSI WISATA </a></li>
-                    <li class="nav-item"><a class="nav-link bg-change" href="#"> KONTAK </a></li>
+                    <li class="nav-item"><a
+                            class="nav-link bg-change border-0 {{ $title === 'potensi-wisata' ? 'header-active' : '' }}"
+                            href="/potensi-wisata"> POTENSI WISATA </a></li>
+                    <li class="nav-item"><a
+                            class="nav-link bg-change border-0 {{ $title === 'kontak' ? 'header-active' : '' }}"
+                            href="/kontak"> KONTAK </a></li>
                 </ul>
             </div>
         </div>

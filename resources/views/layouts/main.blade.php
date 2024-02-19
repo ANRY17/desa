@@ -35,9 +35,25 @@
         @yield('title')
     </div>
 
+    {{-- Start Content --}}
     <div class="container-fluid">
-        @yield('content')
+        <div class="row mt-4">
+            <div class="col-lg-8 mb-4">
+                @yield('content')
+            </div>
+
+            {{-- Start Widget --}}
+            <div class="col-lg-4">
+                @include('partials.widgetSearch')
+                @include('partials.widgetNews')
+                @include('partials.widgetSchedule')
+                @include('partials.widgetVideo')
+            </div>
+            {{-- End Widget --}}
+
+        </div>
     </div>
+    {{-- End Content --}}
 
     @include('partials.footer')
 

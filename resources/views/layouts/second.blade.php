@@ -35,7 +35,7 @@
     {{-- End Header --}}
 
     {{-- Start Title --}}
-    <div class="container-fluid">
+    <div class="container-fluid px-4 py-3 border-bottom mb-4 bg-light">
         @yield('title')
     </div>
     {{-- End Title --}}
@@ -54,6 +54,7 @@
 
             {{-- Start Widget --}}
             <div class="col-lg-4">
+                @include('partials.widgetSearch')
                 @include('partials.widgetSchedule')
                 @include('partials.widgetVideo')
             </div>
